@@ -157,6 +157,15 @@ p span {
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-direction: row;
 }
 
 .contatos-footer {
@@ -187,11 +196,13 @@ p span {
 
 footer {
     display: flex;
-    flex-direction: row;
+    padding: 10px 125px;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px;
-    justify-content: center;
-    gap: 40px;
+}
+
+footer p a {
+    display: inline;
 }
 
 h4 {
