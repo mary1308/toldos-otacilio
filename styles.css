@@ -203,3 +203,102 @@ h4 {
     line-height: normal;
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+    header {
+        display: flex;
+        padding: 10px 24px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contatos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .quem-somos {
+        display: flex;
+        padding: 48px 24px;
+    }
+
+    .beneficios {
+        display: flex;
+        padding: 48px 24px;
+    }
+
+    .beneficios h4 {
+        text-align: center;
+    }
+
+    .solar,
+    .energia,
+    .moveis,
+    .lazer,
+    .estetica {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nossos-servicos {
+        padding: 32px 24px;
+    }
+
+    .secao-fotos {
+        display: flex;
+        padding: 0px 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .imagens {
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .img-tam {
+        width: 155px;
+        height: 156.907px;
+        flex-shrink: 0;
+    }
+
+    .orcamento {
+        padding: 32px 24px;
+    }
+
+    .orcamento button {
+        display: flex;
+        width: 100%;
+        align-self: stretch;
+    }
+
+    .contatos-footer {
+        padding: 48px 24px;
+    }
+
+    .contatos-do-footer {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 16px;
+        align-self: stretch;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        display: flex;
+        width: 100%;
+        padding: 16px 24px;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
