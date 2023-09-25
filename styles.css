@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -52,11 +52,59 @@ img {
 main {
     display: flex;
     flex-direction: column;
-    padding: 40px 365px;
+}
+
+.quem-somos {
+    display: flex;
+    padding: 48px 227px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
 }
 
 .quem-somos p {
-    text-align: center;
+    color: #000;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.beneficios {
+    display: flex;
+    padding: 48px 227px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    background: #F3F3F3;
+}
+
+.solar,
+.energia,
+.moveis,
+.lazer,
+.estetica {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+p span {
+    font-weight: 700;
+}
+
+.nossos-servicos {
+    display: flex;
+    padding: 32px 227px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
 }
 
 .servicos {
@@ -78,12 +126,69 @@ main {
     gap: 32px;
 }
 
+.img-tam {
+    max-width: 172px;
+    min-width: 172px;
+    max-height: 173px;
+    min-height: 173px;
+}
+
+.orcamento {
+    display: flex;
+    padding: 32px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.orcamento button {
+    display: flex;
+    width: 988px;
+    padding: 24px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #1FA166;
+    border: 0px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contatos-footer {
+    display: flex;
+    padding: 48px 227px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    background: #F9F9F9;
+}
+
+.contatos-footer h4 {
+    margin: 0px
+}
+
+.contatos-do-footer {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.contatos-do-footer div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
 
 footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: #F9F9F9;
     padding: 20px;
     justify-content: center;
     gap: 40px;
