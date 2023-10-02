@@ -42,12 +42,21 @@ header {
     height: 80.686px;
 }
 
-img {
+.banner {
+    display: flex;
+    justify-content: center;
+    /* background-color: #F9F9F9; */
+}
+
+.banner-img {
+    max-height: 326px;
+}
+
+/* img {
     width: 172px;
     height: 173px;
     object-fit: cover;
-    /* Isso garante que a imagem seja redimensionada e cortada para caber nas dimensões especificadas */
-}
+} */
 
 main {
     display: flex;
@@ -56,7 +65,7 @@ main {
 
 .quem-somos {
     display: flex;
-    padding: 48px 227px;
+    padding: 3% 10%;
     flex-direction: column;
     align-items: center;
     gap: 16px;
@@ -67,7 +76,7 @@ main {
     color: #000;
     text-align: justify;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -75,7 +84,7 @@ main {
 
 .beneficios {
     display: flex;
-    padding: 48px 227px;
+    padding: 3% 10%;
     flex-direction: column;
     align-items: center;
     gap: 24px;
@@ -94,13 +103,30 @@ main {
     align-self: stretch;
 }
 
+.solar svg,
+.energia svg,
+.moveis svg,
+.lazer svg,
+.estetica svg {
+    min-width: 56px;
+    max-width: 56px;
+}
+
+.solar p,
+.energia p,
+.moveis p,
+.lazer p,
+.estetica p {
+    font-size: 1rem;
+}
+
 p span {
     font-weight: 700;
 }
 
 .nossos-servicos {
     display: flex;
-    padding: 32px 227px;
+    padding: 3% 10%;
     flex-direction: column;
     align-items: center;
     gap: 16px;
@@ -110,6 +136,37 @@ p span {
 .servicos {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.servicos button {
+    display: inline-flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.3125rem;
+    border: 1px solid #243A69;
+    background-color: transparent;
+
+    color: #243A69;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.servicos button.is-active {
+    background: #243A69;
+    color: white;
+}
+
+.secao-fotos {
+    padding: 0px 10%;
 }
 
 .colunas {
@@ -135,10 +192,9 @@ p span {
 
 .orcamento {
     display: flex;
-    padding: 32px 0px;
+    padding: 3% 10%;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
     align-self: stretch;
 }
 
@@ -154,7 +210,7 @@ p span {
     border: 0px;
     color: white;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
@@ -166,11 +222,12 @@ a {
     gap: 16px;
     align-items: center;
     flex-direction: row;
+    color: black;
 }
 
 .contatos-footer {
     display: flex;
-    padding: 48px 227px;
+    padding: 3% 10%;
     flex-direction: column;
     align-items: center;
     gap: 16px;
@@ -208,7 +265,7 @@ footer p a {
 h4 {
     color: #1D3464;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -275,12 +332,6 @@ h4 {
         flex-wrap: wrap;
     }
 
-    .img-tam {
-        width: 155px;
-        height: 156.907px;
-        flex-shrink: 0;
-    }
-
     .orcamento {
         padding: 32px 24px;
     }
@@ -289,6 +340,7 @@ h4 {
         display: flex;
         width: 100%;
         align-self: stretch;
+        font-size: 1rem;
     }
 
     .contatos-footer {
