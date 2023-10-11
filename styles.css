@@ -19,10 +19,44 @@ header {
     justify-content: space-around;
 }
 
-.contatos {
+.menus {
     display: flex;
     color: black;
     gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bt-menu {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: 0px;
+    background-color: transparent;
+}
+
+.bt-menu-bt {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    background: #1FA166;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 0px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    height: 2.938rem;
+    cursor: pointer;
 }
 
 .e-mail,
@@ -32,7 +66,7 @@ header {
     gap: 16px;
 }
 
-.contatos img {
+.menus img {
     width: 24px;
     height: 24px;
 }
@@ -45,18 +79,15 @@ header {
 .banner {
     display: flex;
     justify-content: center;
-    /* background-color: #F9F9F9; */
+    max-height: 20.3125rem;
+    align-items: center;
+    padding: 0px 10%;
+    width: 100%;
 }
 
 .banner-img {
-    max-height: 326px;
+    max-height: 20.3125rem;
 }
-
-/* img {
-    width: 172px;
-    height: 173px;
-    object-fit: cover;
-} */
 
 main {
     display: flex;
@@ -190,17 +221,45 @@ p span {
     min-height: 173px;
 }
 
-.orcamento {
+.CTA {
     display: flex;
     padding: 3% 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    align-self: stretch;
+}
+
+.CTA-text {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    align-self: stretch;
+    gap: 0.625rem;
+    flex: 1 0 0;
+}
+
+.CTA-text h5 {
+    color: #1D3464;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%;
+    margin: 0;
+}
+
+.orcamento {
+    display: flex;
+    padding: 1.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex: 1 0 0;
 }
 
 .orcamento button {
     display: flex;
-    width: 988px;
+    flex: 1 0 0;
     padding: 24px 16px;
     justify-content: center;
     align-items: center;
@@ -223,6 +282,7 @@ a {
     align-items: center;
     flex-direction: row;
     color: black;
+    width: 100%;
 }
 
 .contatos-footer {
@@ -280,7 +340,7 @@ h4 {
         align-items: center;
     }
 
-    .contatos {
+    .menus {
         display: flex;
         flex-direction: column;
         justify-content: center;
